@@ -1,3 +1,4 @@
+"use strict";
 const albumContainer = document.querySelector(".albumContainer");
 const albumCards = Array.from(albumContainer.children);
 
