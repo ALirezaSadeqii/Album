@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .cart-item {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border-bottom: 1px solid #eee;
+      }
+      .cart-item img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-right: 1rem;
+      }
+    </style>
+  </head>
+<<<<<<< HEAD
+  <body style="background: linear-gradient(135deg, #eebbc3 0%, #3ddad7 100%); min-height: 100vh;">
+    <div id="navbar"></div>
+    <!-- Glassmorphic Cart Offer -->
+    <section style="display:flex;justify-content:center;align-items:center;margin:2.5rem 0;">
+      <div style="background:rgba(255,255,255,0.25);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:1.2rem;box-shadow:0 8px 32px 0 rgba(31,38,135,0.18);padding:2rem 2.5rem;max-width:700px;width:100%;animation:fadeIn 0.8s cubic-bezier(.39,.575,.565,1) both;">
+        <h2 style="color:#232946;font-weight:700;text-align:center;letter-spacing:1px;margin-bottom:1.2rem;">🛒 Special Offer: Free Shipping!</h2>
+        <p style="color:#232946;text-align:center;opacity:0.85;max-width:500px;margin:0 auto 1.2rem auto;">Complete your order now and enjoy free shipping on all purchases over $50. Limited time only!</p>
+        <div style="text-align:center;margin-top:1.5rem;">
+          <a href="payment.html" class="btn btn-lg" style="background:linear-gradient(135deg,#3ddad7 0%,#eebbc3 100%);color:#232946;font-weight:700;border-radius:0.7rem;box-shadow:0 2px 8px rgba(61,218,215,0.10);transition:background 0.2s,color 0.2s,transform 0.15s;">Checkout Now</a>
+        </div>
+      </div>
+    </section>
+    <style>@keyframes fadeIn{0%{opacity:0;transform:translateY(40px);}100%{opacity:1;transform:none;}}</style>
+    <div class="container mt-5">
+      <h1 style="color:#232946;font-weight:700;">Shopping Cart</h1>
+      <div id="cart-items"></div>
+      <div class="mt-3 p-4" style="background:linear-gradient(135deg,#eebbc3 0%,#3ddad7 100%);border-radius:14px;box-shadow:0 2px 12px rgba(35,41,70,0.10);max-width:400px;margin:auto;">
+        <h3 style="color:#232946;font-weight:600;">Total Items: <span id="total-items">0</span></h3>
+        <h3 style="color:#232946;font-weight:600;">Total Price: $<span id="total-price">0</span></h3>
+      </div>
+    </div>
+    <div class="container mb-4 text-center">
+      <button id="resetCart" class="btn">Reset Cart</button>
+      <button onclick="window.location.href='payment.html'" class="btn ms-2">Proceed to Payment</button>
+=======
+  <body>
+    <div id="navbar"></div>
+    <div class="container mt-5">
+      <h1>Shopping Cart</h1>
+      <div id="cart-items"></div>
+      <div class="mt-3">
+        <h3>Total Items: <span id="total-items">0</span></h3>
+      </div>
+      <div class="mt-3">
+        <h3>Total Price: $<span id="total-price">0</span></h3>
+      </div>
+    </div>
+    <div class="container mb-4">
+      <button id="resetCart" class="btn btn-danger">Reset Cart</button>
+      <button
+        onclick="window.location.href='payment.html'"
+        class="btn btn-primary ms-2"
+      >
+        Proceed to Payment
+      </button>
+>>>>>>> f74e89253e6287715d979d28df640d83ed4c8899
+    </div>
+    <div id="footer"></div>
+    <script src="cart.js"></script>
+    <script src="layout.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
