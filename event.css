@@ -1,5 +1,4 @@
 body {
-<<<<<<< HEAD
   font-family: 'Inter', Arial, sans-serif;
   background-color: #f4f6fb;
   color: #232946;
@@ -38,32 +37,10 @@ body {
 .icon:hover {
   color: var(--secondary);
 }
-=======
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
-
-.carde {
-  display: flex;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 500px;
-  overflow: hidden;
-}
-.icon {
-  font-size: 20px;
-}
-
->>>>>>> f74e89253e6287715d979d28df640d83ed4c8899
 .card-image {
   width: 250px;
   height: 150px;
   object-fit: cover;
-<<<<<<< HEAD
   border-top-left-radius: 18px;
   border-bottom-left-radius: 18px;
 }
@@ -77,35 +54,16 @@ body {
   color: var(--primary);
   font-weight: 700;
 }
-=======
-}
-
-.card-content {
-  padding: 20px;
-  flex: 1;
-}
-
-.card-content h2 {
-  margin: 0 0 10px;
-  font-size: 1.5rem;
-}
-
->>>>>>> f74e89253e6287715d979d28df640d83ed4c8899
 .card-content p {
   margin: 0 0 20px;
   font-size: 1rem;
   color: #555;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> f74e89253e6287715d979d28df640d83ed4c8899
 .counter {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-<<<<<<< HEAD
 .counter button {
   width: 32px;
   height: 32px;
@@ -123,24 +81,6 @@ body {
   background: linear-gradient(135deg, #3ddad7 0%, #eebbc3 100%);
   color: #fff;
 }
-=======
-
-.counter button {
-  width: 30px;
-  height: 30px;
-  background: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.counter button:hover {
-  background: #0056b3;
-}
-
->>>>>>> f74e89253e6287715d979d28df640d83ed4c8899
 .counter #count {
   font-size: 1.2rem;
   font-weight: bold;
@@ -149,7 +89,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-<<<<<<< HEAD
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 30px;
@@ -173,46 +112,12 @@ body {
   text-align: center;
   max-width: 600px;
   opacity: 0.85;
-=======
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 25px;
-  gap: 45px;
-  margin-bottom: 30px;
-}
-.icon {
-  cursor: pointer;
-}
-.title {
-  color: rgb(0, 0, 0, 0.9);
-  text-align: center;
-  margin-top: 3%;
-  font-family: Switzer-S-Bold;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 85px;
-
-  letter-spacing: 2px;
-}
-.desc {
-  margin: auto;
-  margin-top: 1%;
-  color: #061e00;
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-  max-width: 500px;
->>>>>>> f74e89253e6287715d979d28df640d83ed4c8899
 }
 @media (max-width: 872px) {
   .title {
     line-height: 60px;
   }
 }
-<<<<<<< HEAD
 @media (max-width: 600px) {
   .carde {
     flex-direction: column;
@@ -226,12 +131,5 @@ body {
   }
   .card-content {
     padding: 18px 10px;
-=======
-@media (max-width: 483px) {
-  .carde {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
->>>>>>> f74e89253e6287715d979d28df640d83ed4c8899
   }
 }

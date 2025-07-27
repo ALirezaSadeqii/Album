@@ -6,61 +6,31 @@
     <title>Document</title>
   </head>
   <body>
-<<<<<<< HEAD
-    <nav class="navbar navbar-expand-lg" style="background:rgba(255,255,255,0.25);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:2px solid #eebbc3;box-shadow:0 4px 24px rgba(35,41,70,0.10);">
-      <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <nav class="navbar navbar-expand-lg glass-navbar">
+      <div class="container-fluid nav-container">
+        <a class="navbar-brand d-flex align-items-center gradient-brand" href="index.html">
           <i class="fa-solid fa-compact-disc me-2" style="font-size:1.5rem;"></i>SoundPlay
         </a>
-=======
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">SoundPlay</a>
->>>>>>> f74e89253e6287715d979d28df640d83ed4c8899
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-<<<<<<< HEAD
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto nav-list">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-=======
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
->>>>>>> f74e89253e6287715d979d28df640d83ed4c8899
+              <a class="nav-link active nav-anim" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop</a>
+              <a class="nav-link nav-anim" href="shop.html">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="event.html">Events</a>
+              <a class="nav-link nav-anim" href="event.html">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="cart.html">Cart</a>
+              <a class="nav-link nav-anim" href="cart.html">Cart</a>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Login
-              </a>
-              <ul class="dropdown-menu">
+              <a class="nav-link dropdown-toggle nav-anim" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login</a>
+              <ul class="dropdown-menu glass-dropdown">
                 <li><a class="dropdown-item" href="login.html">Login</a></li>
                 <li><a class="dropdown-item" href="signUp.html">Sign Up</a></li>
               </ul>
@@ -69,10 +39,110 @@
         </div>
       </div>
     </nav>
-<<<<<<< HEAD
-    <!-- Divider for shadow effect -->
-    <div style="height:6px;box-shadow:0 2px 8px rgba(26,34,56,0.10);"></div>
-=======
->>>>>>> f74e89253e6287715d979d28df640d83ed4c8899
+    <style>
+body {
+  overflow-x: hidden;
+}
+.glass-navbar {
+  background: rgba(255,255,255,0.25) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 2.5px solid #3ddad7;
+  box-shadow: 0 4px 24px rgba(35,41,70,0.10);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.gradient-brand {
+  background: linear-gradient(90deg,#3ddad7 0%,#eebbc3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+.nav-list {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+.nav-link.nav-anim {
+  color: #232946 !important;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.2s, background 0.2s;
+  padding: 0.5rem 1.1rem;
+  border-radius: 0.7rem;
+  z-index: 1;
+  overflow: visible;
+}
+.nav-link.nav-anim.active, .nav-link.nav-anim:hover {
+  color: #fff !important;
+  background: linear-gradient(90deg,#3ddad7 0%,#eebbc3 100%);
+}
+.nav-link.nav-anim::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  bottom: 7px;
+  height: 2.5px;
+  background: linear-gradient(90deg,#3ddad7 0%,#eebbc3 100%);
+  border-radius: 2px;
+  opacity: 0;
+  transform: translateY(2px) scaleX(0.7);
+  transition: opacity 0.18s, transform 0.18s;
+  z-index: -1;
+  pointer-events: none;
+}
+.nav-link.nav-anim.active::after, .nav-link.nav-anim:hover::after {
+  opacity: 1;
+  transform: translateY(0) scaleX(1);
+}
+.glass-dropdown {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0.7rem;
+  box-shadow: 0 4px 24px rgba(35,41,70,0.10);
+  border: 1.5px solid #eebbc3;
+  min-width: 160px;
+  padding: 0.5rem 0;
+}
+.glass-dropdown .dropdown-item {
+  color: #232946;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: background 0.18s, color 0.18s;
+  padding: 0.5rem 1.2rem;
+}
+.glass-dropdown .dropdown-item:hover, .glass-dropdown .dropdown-item:focus {
+  background: linear-gradient(90deg,#3ddad7 0%,#eebbc3 100%);
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .gradient-brand { font-size: 1.5rem; }
+  .nav-link.nav-anim { font-size: 1rem; padding: 0.5rem 0.7rem; }
+  .nav-container { padding-left: 0.7rem; padding-right: 0.7rem; }
+}
+@media (max-width: 600px) {
+  .gradient-brand { font-size: 1.1rem; }
+  .nav-link.nav-anim { font-size: 0.95rem; padding: 0.5rem 0.5rem; }
+}
+</style>
+<div style="height:6px;box-shadow:0 2px 8px rgba(26,34,56,0.10);"></div>
   </body>
 </html>

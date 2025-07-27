@@ -1,6 +1,5 @@
 button {
   margin-left: 2%;
-<<<<<<< HEAD
   background: linear-gradient(135deg, #eebbc3 0%, #3ddad7 100%);
   color: #232946;
   border: none;
@@ -13,6 +12,4 @@ button {
 button:hover {
   background: linear-gradient(135deg, #3ddad7 0%, #eebbc3 100%);
   color: #fff;
-=======
->>>>>>> f74e89253e6287715d979d28df640d83ed4c8899
 }
